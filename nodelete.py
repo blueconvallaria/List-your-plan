@@ -1321,6 +1321,31 @@ WindowManager.add_widget(SecondRound3())
 WindowManager.add_widget(SecondRound4())
 WindowManager.add_widget(SecondRound5())
 
+class LYPApp(App):
+    def build(self):
+        return WindowManager
+    def vibrate(self, time):
+        vibrator.vibrate(time=5)
+    def pattern(self, pattern):
+        vibrator.pattern([0, 0, 1, 2])
+    def exists(self):
+        return self._exists()
+    def cancel(self):
+        self._cancel()
+
+        # private
+    def _vibrate(self, **kwargs):
+        raise NotImplementedError()
+    def _pattern(self, **kwargs):
+        raise NotImplementedError()
+    def _exists(self, **kwargs):
+        raise NotImplementedError()
+    def _cancel(self, **kwargs):
+        raise NotImplementedError()
+
+if _name_ == "_main_":
+    LYPApp().run()
+
 class ListyourplanApp(App):
 
     def build(self):
