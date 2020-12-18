@@ -1,6 +1,9 @@
 # List-your-plan
-Course: Teknik Pemograman Lecturer: Fredian Simanjuntak, S.Kom. 
 Project title: List your plan 
+Course: Teknik Pemograman 
+Lecturer: Fredian Simanjuntak, S.Kom.
+Year of Education: 2020/2021
+
 Member with SIN: 
 Jecelyn 2031007 
 Eric 2031010 
