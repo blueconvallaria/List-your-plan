@@ -1343,5 +1343,5 @@ class LYPApp(App):
     def _cancel(self, **kwargs):
         raise NotImplementedError()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     LYPApp().run()
