@@ -1345,11 +1345,3 @@ class LYPApp(App):
 
 if _name_ == "_main_":
     LYPApp().run()
-
-class ListyourplanApp(App):
-
-    def build(self):
-        return WindowManager
-
-if __name__ == "__main__":
-    ListyourplanApp().run()
